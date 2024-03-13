@@ -8,12 +8,14 @@
             <a href="https://github.com/burnszac001">
                 <b>Zachary Burns</b>
                 <br />
+                <br />
                 <img src="https://avatars2.githubusercontent.com/u/47249892?s=400&v=4" width="150px;" alt=""/>
             </a>
         </td>
         <td align="center">
             <a href="https://github.com/robbykap">
                 <b>Robert Greathouse</b>
+                <br />
                 <br />
                 <img src="https://avatars.githubusercontent.com/u/124636554?v=4" width="150px;" alt=""/>
             </a>
@@ -22,12 +24,14 @@
             <a href="https://github.com/dallinmj">
                 <b>Dallin Jacobs</b>
                 <br />
+                <br />
                 <img src="https://avatars.githubusercontent.com/u/144403280?v=4" width="150px;" alt=""/>
             </a>
         </td>
         <td align="center">
-            <a href="#">
+            <a href=#>
                 <b>Scott Slinn</b>
+                <br />
                 <br />
                 <img src="https://avatars.githubusercontent.com/u/74032453?s=88&v=4" width="150px;" alt=""/>
             </a>
