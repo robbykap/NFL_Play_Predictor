@@ -50,3 +50,24 @@ def load_nfl_data(file_path) -> [pd.DataFrame, pd.Series]:
     nfl_play_data = pd.get_dummies(nfl_play_data)
 
     return nfl_play_data, play_outcomes
+
+
+# features_not_found =   ['date',
+#                         'home_team',
+#                         'game_date',
+#                         'time',
+#                         'qb_scrumble',
+#                         'tackler1_player_id',
+#                         'tackler1_player_name',
+#                         'tackler2_player_id',
+#                         'tackler2_player_name',
+#                         'field_goal_kicker_player_id',
+#                         'field_goal_kicker_player_name',
+#                         'punter_player_name',
+#                         'punter_player_id',
+#                         'kicker_player_name',
+#                         'kicker_player_id',
+#                         'own_kickoff_recovery_player_id',
+#                         'own_kickoff_recovery_player_name',
+#                         'blocked_player_id',
+#                         'blocked_player_name']
