@@ -1,2 +1,4 @@
 nfl-play-by-play-2009-2018.csv
 venv
+.idea
+**/__pycache__/**
