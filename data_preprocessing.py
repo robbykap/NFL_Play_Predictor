@@ -34,8 +34,6 @@ def load_nfl_data(file_path) -> [pd.DataFrame, pd.Series]:
 
     nfl_play_data: pd.DataFrame = pd.read_csv(file_path)
 
-    print(len(nfl_play_data))
-
     # keep only the columns listed
     nfl_play_data = nfl_play_data[features_to_keep]
 
@@ -43,7 +41,5 @@ def load_nfl_data(file_path) -> [pd.DataFrame, pd.Series]:
     nfl_play_data = nfl_play_data[nfl_play_data['play_type'].isin(['pass', 'run'])]
 
     play_outcomes: pd.Series = nfl_play_data.pop('play_type')
-
-    print(len(nfl_play_data))
 
     return nfl_play_data, play_outcomes
