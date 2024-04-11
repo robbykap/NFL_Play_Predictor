@@ -90,6 +90,30 @@ def load_nfl_data(file_path) -> [pd.DataFrame, pd.Series]:
     return nfl_play_data, play_outcomes
 
 
+
+def old_load_nfl_data(file_path) -> [pd.DataFrame, pd.Series]:
+
+    nfl_play_data: pd.DataFrame = pd.read_csv(file_path, nrows=1000)
+    nfl_play_data: pd.DataFrame = pd.read_csv(file_path)
+
+    # keep only the columns listed
+    nfl_play_data = nfl_play_data[features_to_keep]
+
+    nfl_play_data = nfl_play_data.dropna()
+
+    # remove any plays where play_type not in ('pass', 'run')
+    nfl_play_data = nfl_play_data[nfl_play_data['play_type'].isin(['pass', 'run'])]
+
+    nfl_play_data['half_seconds_remaining'] = nfl_play_data['half_seconds_remaining'] / 3600
+    nfl_play_data['game_seconds_remaining'] = nfl_play_data['game_seconds_remaining'] / 3600
+
+
+    play_outcomes = pd.get_dummies(nfl_play_data.pop('play_type'))
+
+    nfl_play_data = pd.get_dummies(nfl_play_data)
+
+    return nfl_play_data, play_outcomes
+
 # features_not_found =   ['date',
 #                         'home_team',
 #                         'game_date',
